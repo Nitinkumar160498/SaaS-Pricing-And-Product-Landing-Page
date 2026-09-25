@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #505866;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+.navbar {
+    min-height: 76px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar-brand {
+    color: #111827;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #374151;
+}
+
+.hero {
+    padding: 100px 0 80px;
+    background: #f7f8fa;
+}
+
+.badge-text {
+    color: #111827;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin: 18px auto;
+    color: #111827;
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1.05;
+}
+
+.hero > .container > p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.dashboard-preview {
+    max-width: 900px;
+    margin: 70px auto 0;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e1e5ea;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.metric-card {
+    padding: 22px;
+    text-align: left;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.metric-card span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.metric-card strong {
+    color: #111827;
+    font-size: 28px;
+}
+
+.section-space {
+    padding: 100px 0;
+}
+
+.section-title {
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.section-title.text-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.section-title h2 {
+    margin-top: 12px;
+    color: #111827;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.2;
+}
+
+.feature-card {
+    height: 100%;
+    padding: 32px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.feature-number {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.feature-card h3 {
+    margin: 20px 0 12px;
+    color: #111827;
+    font-size: 21px;
+}
+
+.pricing {
+    background: #f7f8fa;
+}
+
+.pricing-card {
+    position: relative;
+    height: 100%;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e1e5ea;
+    border-radius: 14px;
+}
+
+.pricing-card.featured {
+    border: 2px solid #111827;
+}
+
+.popular {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background: #111827;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.pricing-card h3 {
+    color: #111827;
+}
+
+.price {
+    margin: 25px 0;
+    color: #111827;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.price small {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+}
+
+.pricing-card li {
+    padding: 9px 0;
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.accordion-item {
+    border: 1px solid #e5e7eb;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    color: #111827;
+    font-weight: 600;
+}
+
+.final-cta {
+    padding: 90px 0;
+    background: #111827;
+}
+
+.final-cta h2 {
+    color: #fff;
+    font-size: clamp(32px, 4vw, 48px);
+}
+
+.final-cta p {
+    color: #cbd5e1;
+    margin-bottom: 28px;
+}
+
+footer {
+    padding: 50px 0 20px;
+    background: #0b1220;
+    color: #9ca3af;
+}
+
+.footer-content strong {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.footer-content p {
+    margin-top: 8px;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #263142;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .dashboard-preview {
+        margin-top: 45px;
+    }
+
+    .preview-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .section-space {
+        padding: 70px 0;
+    }
+
+    .pricing-card {
+        padding: 28px;
+    }
+}
